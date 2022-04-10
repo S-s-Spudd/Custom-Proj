@@ -1,0 +1,101 @@
+<!-- Checking Dark Mode Compatibility/ Or Whether It's Work's With a Toggle. -->
+
+<!DOCTYPE html>
+
+<html lang="en" class="dark">
+
+<head>
+    
+    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="antialiased text-dark-grey bg-white dark:bg-darkmode">
+
+    <!-- Creating Dark Mode, Standard/Off = Light Mode, Changed/On = Dark Mode  -->
+
+    <!-- Creating a simple header to test Tailwindcss -->
+
+    <!-- py-4 = padding: 4px; on the Y axis :  py-8 = padding: 8px; on the X axis-->
+
+    <header class="bg-midnight text-white">
+        
+        <div class="container mx-auto items-center flex justify-between">
+            <img src="logo/SsSpudd's-logos_transparent.png" alt="Website Logo" class=" h-20"></a>
+
+            <!-- Inorder to get a button, (https://heroicons.com) find an SVG that you like, copy and then paste in between the button tag./ To have the icons to disappear then have a class added to the button.  -->
+            
+            <button id="togglebar" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="RED">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+
+            <!-- To hide the button's on a mobile screen then before "flex" have the hidden tag along with the screen size in this case md. -->
+            <nav id="nav" class="fixed top-6 bottom-0 -right-full bg-midnight w-53 md:auto md:static transition-all">
+                <ul class="md:flex">
+                    <li><a href="index.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">Home</a></li>
+                    <li><a href="About Me.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">About Me</a></li>
+                    <li><a href="Projects.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">Projects</a></li>
+              </ul>
+            </nav>
+        
+        </div>
+    </header>
+
+    <div class="container pt-2">
+        
+
+        <div class="grid grid-rows-1 gap-2 pt-3 md:grid-rows-2 lg:grid-rows-3">
+            
+
+            <!-- To change background, class name = bg but in order to change the color of text its not standard color, its just class name = text (name of color branding {type of color/weight}) -->
+            <div class="px-4 py-4 border-2 rounded-md bg-light-grey border-midnight">
+                <h2 class="mb-1 text-xs tracking-widest">What This Website Is About?</h2>
+                <h1 class="mb-3 text-lg title-font text-bubble-gum">Because Yes.</h1>
+                <p class="mb-3 text-sm leading-relaxed">This website is supposed to be a way for me to show all my works and present them to people who need help in programming a site etc, </p>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="grid grid-cols-1 gap-4 px-24 py-10 text-white align-middle md:grid-cols-1 lg:grid-cols-1">
+
+        <footer>
+        </footer>
+   
+            <!-- Creating Dark Mode, Standard/Off = Light Mode, Changed/On = Dark Mode  -->
+
+
+    <div class="flex items-center justify-end space-x-2">
+        <span class="text-sm text-white">Light</span>
+        <div>
+            <input type="checkbox" name="" id="toggle" class="hidden" />
+            <label for="toggle" class="cursor-pointer">
+                <div class="flex items-center h-5 p-1 rounded-full w-9 bg-grey">
+                    <div class="w-4 h-4 duration-300 ease-out transform bg-white rounded-full shadow-md toggle-dot"></div>
+                </div>
+            </label>
+        </div>
+        <span class="text-sm text-grey">Dark</span>
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="/src/js/darkmode.js"></script>
+    <script src="/src/js/navbar.js"></script>
+
+</body>
+</html>

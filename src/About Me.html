@@ -1,0 +1,117 @@
+<!-- Checking Dark Mode Compatibility/ Or Whether It's Work's With a Toggle. -->
+
+<!DOCTYPE html>
+
+<html lang="en" class="dark">
+
+<head>
+    
+    <title>Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="antialiased text-dark-grey bg-white dark:bg-darkmode">
+
+    <!-- Creating Dark Mode, Standard/Off = Light Mode, Changed/On = Dark Mode  -->
+
+    <!-- Creating a simple header to test Tailwindcss -->
+
+    <!-- py-4 = padding: 4px; on the Y axis :  py-8 = padding: 8px; on the X axis-->
+
+    <header class="bg-midnight text-white">
+        
+        <div class="container mx-auto items-center flex justify-between">
+            <img src="logo/SsSpudd's-logos_transparent.png" alt="Website Logo" class=" h-20"></a>
+
+            <!-- Inorder to get a button, (https://heroicons.com) find an SVG that you like, copy and then paste in between the button tag./ To have the icons to disappear then have a class added to the button.  -->
+            
+            <button id="togglebar" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="RED">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+            </button>
+
+
+            <!-- To hide the button's on a mobile screen then before "flex" have the hidden tag along with the screen size in this case md. -->
+            <nav id="nav" class="fixed top-6 bottom-0 -right-full bg-midnight w-53 md:auto md:static transition-all">
+                <ul class="md:flex">
+                    <li><a href="index.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">Home</a></li>
+                    <li><a href="About Me.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">About Me</a></li>
+                    <li><a href="Projects.html" class="block p-3 bg-midnight text-bubble-gum py-2 px-4">Projects</a></li>
+              </ul>
+            </nav>
+        
+        </div>
+    </header>
+
+    <div class="container pt-2">
+        
+
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
+            
+
+            <!-- To change background, class name = bg but in order to change the color of text its not standard color, its just class name = text (name of color branding {type of color/weight}) -->
+            <div class="bg-light-grey rounded-md px-4 py-4 border-2 border-midnight">
+                <h2 class="tracking-widest text-xs mb-1">Introduction About Me</h2>
+                <h1 class="title-font text-lg text-bubble-gum mb-3">Who Am I?</h1>
+                <p class="leading-relaxed text-sm mb-3">I am a teenager who picked up programming as a hobby, because i thought it was fun at the start. My name is ----- and online i go by the name of SsSpudd. You might wonder why i have censored my name, its because i do not wish to be known. </p>
+            </div>
+
+            <div class="bg-light-grey rounded-md px-4 py-4 border-2 border-midnight">
+                <h2 class="tracking-widest text-xs mb-1">Introduction About Me</h2>
+                <h1 class="title-font text-lg text-bubble-gum mb-3">What I Want To Be?</h1>
+                <p class="leading-relaxed text-sm mb-3">In the end of my journey, i wish to be a fully fledged game developer, so that i can provide other people with a great time and as well as enjoy what i do since it started out as a hobby. I also want to be able to help other developer's who are starting out this tough journey of programming. One way im going to achieve that is by showing all my work's that i have created or that may be in the works unless private.</p>
+                <a href="Projects.html"><button class="bg-midnight text-sm text-white rounded-md px-4 py-1 customBtn">Click here to learn more</button></a>
+            </div>
+
+            <div class="bg-light-grey rounded-md px-4 py-4 border-2 border-midnight">
+                <h2 class="tracking-widest text-xs mb-1">Introduction About Me</h2>
+                <h1 class="title-font text-lg text-bubble-gum mb-3">What I Want To Achieve?</h1>
+                <p class="leading-relaxed text-sm mb-3">In the end, i want to able to achieve the fact that i have created a game, that will give people a great time while playing it, also the fact that im able to achieve the rest of my dreams, such as travelling across the world.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="grid align-middle text-white py-10 px-24 grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
+
+        <footer>
+
+   
+            <!-- Creating Dark Mode, Default/Off = Light Mode, Changed/On = Dark Mode  -->
+
+
+    <div class="flex justify-end items-center space-x-2">
+        <span class="text-sm text-white">Light</span>
+        <div>
+            <input type="checkbox" name="" id="toggle" class="hidden" />
+            <label for="toggle" class="cursor-pointer">
+                <div class="w-9 h-5 flex items-center bg-grey rounded-full p-1">
+                    <div class="toggle-dot w-4 h-4 bg-white rounded-full shadow-md transform duration-300 ease-out"></div>
+                </div>
+            </label>
+        </div>
+        <span class="text-sm text-grey">Dark</span>
+    </div>
+
+
+
+
+        </footer>
+
+    </div>
+
+    <script src="/src/js/darkmode.js"></script>
+    <script src="/src/js/navbar.js"></script>
+
+
+</body>
+</html>
