@@ -1,3 +1,5 @@
+                Not fully added to TailWind CSS config File.
+                
                 #D3D3D3	'LightGrey'
                 #DCDCDC	'Gainsboro'
                 #E5E4E2	'Platinum'
